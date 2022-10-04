@@ -1,0 +1,298 @@
+body {
+	font-family: Raleway;
+
+	box-sizing: border-box;
+	font-size: 16;
+
+}
+/*bodywrap - So fooder  margin*/
+.bodywrap{
+	margin: 100px;	
+}
+
+/*Header - Holds Logo and navbar*/
+.header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.header > div >img{
+	max-width: 150px;
+	height: auto;	
+}
+/*Navbar*/
+.header > nav{
+	align-self: flex-end;
+}
+
+.header > nav a{
+	color: black;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.header > nav a:hover{
+	border-top: 3px solid blue; 
+	color:blue;
+}
+
+/*Search*/
+.head3{
+	line-height: 0.1em;
+}
+/*Icon*/
+.locationdot{
+	border-radius: 15px 0px 0px 15px;
+	background-color: #F2F2F2;
+	border:2px solid #F2F2F2;
+	box-shadow: none;
+	padding: 10px 10px;
+}
+/*Input box*/
+.searchbox{
+	padding: 10px 20px;
+}
+/*Button*/
+.searchbutton{
+	border-radius: 0px 15px 15px 0px;
+	background: #0065FC;
+	border:2px solid #0065FC;
+	color: white;
+	box-shadow: none;
+	padding: 10px 20px;
+}
+
+/*Filter*/
+.filters{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	width:40%;
+	justify-content: space-between;
+}
+
+.filters > div{
+	display: flex;
+	justify-content: space-between;
+	width:90%;
+}
+/*button parent class*/
+.filters> div> button{
+	border-radius: 25px;
+	background: white;
+	border:2px solid #F2F2F2;
+	font-size: 14;
+	font-family: Raleway;
+	padding: 8px 0px;
+	
+}
+/*button span icon*/
+.filtersicon{
+	color: #0065FC;
+	background: #DEEBFF;
+	border-radius: 25px;
+	padding: 10px 12px;
+	min-width:30xp;
+}
+/*button span icon*/
+.filterstext{
+	font-size: 14;
+	font-family: Raleway;
+	padding: 8px 12px;
+	font-weight: 900;
+}
+
+.filters> div> button:hover{
+	background: #DEEBFF;
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	width:650px;
+	padding: 10px 0px;
+}
+
+.infoicon{
+	border-radius: 25px;
+	padding: 6px 10px;
+	min-width:30xp;
+	font-size:14px;
+	border-style: solid;
+	border:2xp;
+	border-color: #F2F2F2;
+}
+
+.infotext{
+	width:600px;
+}
+
+/*cards for accomdation and Popular*/
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*Bold of the accomdation and Popular*/
+.waightbold{
+	font-weight: bold;
+}
+
+.accommodations {
+	width: 1200px;
+	height: 820px;
+	background-color: #F2F2F2;
+	padding: 20px;
+	border-radius: 25px;	
+}
+
+.accommodationswrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: 700px;
+}
+
+.accomadationhead{
+	line-height: 0em;
+}
+
+/*Accomdation Cards*/
+.accomadationcard{
+	border-radius: 25px;
+	background-color: white;
+	height: 280px;
+	padding: 10px;
+}
+
+.accomadationcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.accomadationcard > img{
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	width: 320px; 
+	height: 180px;
+}
+
+.accomadationcard > p{
+	padding: 0px 2px;
+	line-height: 0.5em;
+}
+
+.accommodations > a{
+	color: black;
+	padding: 8px 0px;
+	text-decoration: none;
+}
+
+.accommodations > a:hover {
+	color: #0065FC;
+}
+
+.popular {
+	display: flex;
+	flex-direction: column;
+	width: 500;
+	background-color: #F2F2F2;
+	padding: 20px;
+	border-radius: 25px;
+	justify-content: space-between;
+}
+
+.popularhead{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+/*Popular Cards*/
+.popularcard{
+	border-radius: 25px;
+	background-color: white;
+	display: flex;
+	padding: 10px;
+}
+
+.popularcard > img{
+	border-radius: 25px 0px 0px 25px;
+	object-fit: cover;
+	width: 200px; 
+	height: 200px;
+}
+
+.popularcard:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.popularcard > div > p{
+	padding: 1px 10px;
+	line-height: 1.5em;
+}
+
+/*cards Activities*/
+.ativitieswrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.ativitiescards{
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	background-color: white;
+	height: fit-content;
+}
+
+.ativitiescards:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ativitiescards > p{
+	padding: 12px 12px;
+	font-weight: bold;
+}
+
+.ativitiesimgL{
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	width: 420px; 
+	height: 495px;
+}
+
+.ativitiesimgM{
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	width: 420px; 
+	height: 200px;
+}
+/*Footer*/
+.footer{
+	background-color: #F2F2F2; 
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer > div{
+	display: flex;
+	flex-basis: 20%;
+	padding: 8px 100px;
+	flex-direction: column;	
+}
+
+.footer > div > a{
+	color: black;
+	padding: 8px 0px;
+	text-decoration: none;
+}
+
+.footer > div > a:hover {
+	color: #0065FC;
+}
+
