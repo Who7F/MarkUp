@@ -1,11 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Booki</title>
 	<script src="https://kit.fontawesome.com/b1c481eca1.js" crossorigin="anonymous"></script>
 <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">-->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
+	
+<!--<link rel="stylesheet" type="text/css" media="screen and (min-width: 1600px)" href="css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="css/main992.css">
+<!--<link rel="stylesheet" type="text/css" href="css/tablet.css">-->
 </head>
 
 <body>
@@ -48,19 +51,20 @@
 				<span class ="filterstext">Romantic</span>
 				</button>
 			<button type="button">
-				<span class ="filtersicon"><i class="fa-solid fa-dog""></i></span>
-				<span class ="filterstext">Pats allowed<span>
+				<span class ="filtersicon"><i class="fa-solid fa-dog"></i></span>
+				<span class ="filterstext">Pats allowed</span>
 			</button>
 		</div>
 		
 	</div>
 	
 	<div class ="info">
-		<div class ="infoicon"><i class="fa-solid fa-info"></i><span></div>
-		<div class ="infotext">More then 500 accommodations are avallable in the city</div>
-		
+		<div class ="infoicon"><i class="fa-solid fa-info"></i></div>
+		<div class ="infotext">More then 500 accommodations are avallable in the city</div>	
 	</div>
+	
 	<br>
+	
 	<div class = "cards">
 		<div class = "accommodations">
 			<h3 class = "accomadationhead">Accomadation in Marseille</h3>
@@ -108,7 +112,7 @@
 				</div>
 			</div>
 			
-			<a href="#">Show more</a>
+			<p><a href="#">Show more</a></p>
 		</div>
 		
 		<div class = "popular">
@@ -116,36 +120,37 @@
 				<h3>Most Popular</h3>
 				<i class="fa-solid fa-star"></i>
 			</div>
-			
-			<div class = "popularcard">
+			<div class = "popularwrap">
+				<div class = "popularcard">
 					<img src="Images/Popular/MorningSun.jpg" alt="Paris">
 					<div>
 					<p class = "waightbold">Morning Sun Hotel</p>
 					<p>Night Starting at 128€</p>
 					<p><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i></p>
 					</div>
-			</div>
-			<div class = "popularcard">
+				</div>
+				<div class = "popularcard">
 					<img src="Images/Popular/AlCount.jpg" alt="Paris">
 					<div>
 					<p class = "waightbold">Au coeur de l'eau Bed and Breakfast</p>
 					<p>Night Starting at 71€</p>
 					<p><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#F2F2F2;"></i></p>
 					</div>
-			</div>
-			<div class = "popularcard">
+				</div>
+				<div class = "popularcard">
 					<img src="Images/Popular/ToutBleu.jpg" alt="Paris">
 					<div>
 					<p class = "waightbold">Tout bleu Blanc Hotal</p>
 					<p>Night Starting at 86€</p>
 					<p><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#0065FC;"></i><i class="fa-solid fa-star" style="color:#F2F2F2;"></i></p>
 					</div>
-			</div>
-				
+				</div>
+			</div>	
 		</div>
 	</div>
 	<h3>Activities in Marseille</h3>
 	<div class = "ativitieswrap">
+	<!-- 
 		<div class = "ativitiescards">
 			<img src="Images/Activities/OldPort.jpg" class = "ativitiesimgL">
 			<p>Old Port</p>
@@ -176,6 +181,37 @@
 				<p>Longchamp Park</p>
 			</div>
 		</div>
+	-->	
+		<div class = "ativitiescards">
+			<img src="Images/Activities/OldPort.jpg" alt="Paris" class = "ativitiesimgL">
+			<p>Old Port</p>
+		</div>
+		
+		<div class = "ativitiescards">
+			<img src="Images/Activities/Pormegues.jpg" alt="Paris" class = "ativitiesimgM">
+			<p>Pomegues Fort</p>
+		</div>
+		
+		<div class = "ativitiescards">
+			<img src="Images/Activities/Friout.jpg" alt="Paris" class = "ativitiesimgM">
+			<p>Frioul Island</p>
+		</div>
+		
+		<div class = "ativitiescards">
+			<img src="Images/Activities/Calanques.jpg" alt="Paris" class = "ativitiesimgL">
+			<p>Calanques National Park</p>
+		</div>
+		
+		<div class = "ativitiescards">
+			<img src="Images/Activities/NotreDeme.jpg" alt="Paris" class = "ativitiesimgM">
+			<p>Notre-Deme-da-La-Garde</p>
+		</div>
+			
+		<div class = "ativitiescards">
+			<img src="Images/Activities/Longchamp.jpg" alt="Paris" class = "ativitiesimgM">
+			<p>Longchamp Park</p>
+		</div>
+		
 	</div>
 </div>
 	<footer class = "footer">

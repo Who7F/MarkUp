@@ -1,0 +1,100 @@
+body {
+	width:768px;
+}
+.bodywrap{	
+
+}
+.cards{
+	flex-direction: column-reverse;
+}
+/*Header - Holds Logo and navbar*/
+
+.popular {
+	width: 100%;	
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+.popularwrap{
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.popularcard{
+	flex-direction: column;
+}
+
+.popularcard{
+	width: 25%;
+	background-color: white;
+	justify-content: space-around;
+}
+
+.popularcard > img{
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	width: 100%; 
+	height: 100xp;
+}
+
+.popularcard:hover {
+
+}
+
+.popularcard > div > p{
+
+}
+
+.accommodations {
+	width: 100%;
+	background-color: white;
+	padding: 0;
+}
+
+.accommodationswrap{
+	gap: 3px 3px;	
+}
+
+.accomadationcard{
+	height: 180px;
+	width: 25%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.accomadationcard:hover {
+
+}
+
+.accomadationcard > img{
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	width: 100%; 
+	height: 90px;
+}
+
+.accomadationcard > p{
+
+}
+
+.ativitieswrap{
+	flex-direction: row;
+	justify-content: space-around;
+}
+.ativitiescards{
+	width: 31%; 
+}
+
+
+.ativitiescards > p{
+
+}
+
+.ativitiesimgL{
+	width: 100%; 
+	height: 100px;
+}
+
+.ativitiesimgM{
+	width: 100%; 
+	height: 100px;
+}
