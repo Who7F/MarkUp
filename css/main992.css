@@ -1,24 +1,24 @@
-body {
+body{
 	font-family: Raleway;
-	width:992px;
 	box-sizing: border-box;
 	font-size: 12px;
-	
+	margin: auto;
 
 }
 
-
 /*bodywrap - So fooder  margin*/
 .bodywrap{	
-	width: 90%;
-	margin: auto;
+
 }
 
 /*Header - Holds Logo and navbar*/
 .header{
+	width: 90%;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-top:2px;
 }
 
 .header > div >img{
@@ -26,22 +26,34 @@ body {
 	height: auto;	
 }
 /*Navbar*/
-.header > nav{
-	align-self: flex-end;
+.navbar{
+	width: 400px;
 }
 
-.header > nav a{
+.header > div> nav{
+	width: 100%;
+	overflow: auto;
+}
+
+.header > div> nav a{
 	color: black;
-	padding: 14px 20px;
+	padding-top: 10px;
 	text-decoration: none;
 	text-align: center;
+	width: 50%;
+	float: left;
+	border-top: 3px solid white; 
 }
 
-.header > nav a:hover{
+.header > div> nav a:hover{
 	border-top: 3px solid blue; 
 	color:blue;
 }
 
+.main{
+	width: 90%;
+	margin: auto;
+}
 /*Search*/
 .head3{
 	line-height: 0.1em;
@@ -55,9 +67,10 @@ body {
 	padding: 10px 10px;
 }
 /*Input box*/
+
 .searchbox{
 	font-family: Raleway;
-	padding: 10px 20px;
+	padding: 10px 20px;	
 }
 /*Button*/
 .searchbutton{
@@ -68,6 +81,14 @@ body {
 	box-shadow: none;
 	padding: 10px 20px;
 	font-family: Raleway;
+}
+
+.searchicon{
+	visibility: hidden;
+	font-size: 0px;
+}
+.searchtext{
+	
 }
 
 /*Filter*/
@@ -81,16 +102,13 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 20xp 40xp;
-	width: 600px;
-	
+	width: 70%
 }
 /*button parent class*/
 .filters> div> button{
 	border-radius: 25px;
 	background: white;
 	border:2px solid #F2F2F2;
-	font-size: 14;
 	font-family: Raleway;
 	padding: 8px 0px;
 	
@@ -101,11 +119,9 @@ body {
 	background: #DEEBFF;
 	border-radius: 25px;
 	padding: 10px 12px;
-	min-width:30xp;
 }
 /*button span icon*/
 .filterstext{
-	font-size: 10;
 	font-family: Raleway;
 	padding: 4px 12px;
 	font-weight: 900;
@@ -120,17 +136,15 @@ body {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-between;
-	width:650px;
+	width:300px;
 	padding: 10px 0px;
+	align-items: baseline;
 }
 
 .infoicon{
 	border-radius: 25px;
 	padding: 6px 10px;
-	min-width:30xp;
-	font-size:14px;
 	border-style: solid;
-	border:2xp;
 	border-color: #F2F2F2;
 }
 
@@ -150,7 +164,7 @@ body {
 }
 
 .accommodations {
-	width: 550px;
+	width: 65%;
 	height: fit-content;
 	background-color: #F2F2F2;
 	padding: 10px;
@@ -165,7 +179,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 10px 10px;	
+	gap: 10px;	
 }
 
 /*Accomdation Cards*/
@@ -212,7 +226,6 @@ body {
 	background-color: #F2F2F2;
 	padding: 10px;
 	border-radius: 25px;
-	justify-content: flex-start;
 }
 
 .popularhead{
@@ -226,8 +239,8 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
-	height: 100%;
-	gap: 20px 20px;	
+	gap: 10px;
+
 }
 /*Popular Cards*/
 .popularcard{
@@ -259,7 +272,7 @@ body {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
-	height:315px;
+	height:330px;
 	padding-bottom: 50px;
 }
 

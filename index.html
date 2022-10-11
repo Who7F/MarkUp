@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 	<title>Booki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/b1c481eca1.js" crossorigin="anonymous"></script>
 <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	
 <!--<link rel="stylesheet" type="text/css" media="screen and (min-width: 1600px)" href="css/main.css">-->
 	<link rel="stylesheet" type="text/css" href="css/main992.css">
-<!--<link rel="stylesheet" type="text/css" href="css/tablet.css">-->
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="css/main992cap.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/tablet.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" href="css/mobile.css">
 </head>
 
 <body>
@@ -16,56 +19,66 @@
 <div class = "bodywrap">
 	<!--Hedder.  Holds Logo and Nav bar -->
 	<header class = "header">
-		<div>
+		<div class = "logo">
 			<img src="images/Logo/BookiLogo.png" alt="Booki Logo">
 		</div>
-		<!-- -->
-		<nav>	
-			<a href="#">Accommodation</a>
-			<a href="#">Activities</a>
-		</nav>
+		<!--Nave Wrap-->
+		<div class ="navbar">
+			<nav>	
+				<a href="#">Accommodation</a>
+				<a href="#">Activities</a>
+			</nav>
+		</div>		
 	</header>
+
+	<main class = main>
 	<!--First div.  Welcome and Search-->
-	<div>
-		<h3 class = "head3">Find a place for your dream vacation</h3>
-		<p>Downtown or in nature</p>
+	<div class = "options">
 		<div>
-			<button class = "locationdot"><i class="fa-solid fa-location-dot"></i></button><input type="text" id="fname" name="fname" placeholder="Search" class = "searchbox"><button type="button" class = "searchbutton">Search</button>
-		</div>
-	</div>
-	<br>
-	<!--Fitters still working on-->	
-	<div class = "filters">
-		<h4>Fitters</h4> 
-		<div>
-			<button type="button">
-				<span class ="filtersicon"><i class="fa-solid fa-money-bill-wave"></i></span>
-				<span class ="filterstext">Low cost</span>
-			</button>
-			<button type="button">
-				<span class ="filtersicon"><i class="fa-solid fa-child-reaching"></i></span>
-				<span class ="filterstext">Famlly-friendly</span>
-			</button>
-			<button type="button">
-				<span class ="filtersicon"><i class="fa-solid fa-heart"></i></span>
-				<span class ="filterstext">Romantic</span>
+			<h3 class = "head3">Find a place for your dream vacation</h3>
+			<p>Downtown or in nature</p>
+			<form class ="form">
+				<button class = "locationdot"><i class="fa-solid fa-location-dot"></i></button><input type="text" id="fname" name="fname" placeholder="Search" class = "searchbox"><button type="button" class = "searchbutton">
+					<span class ="searchicon"><i class="fa-solid fa-magnifying-glass"></i></span>
+					<span class ="searchtext">Search</span>
 				</button>
-			<button type="button">
-				<span class ="filtersicon"><i class="fa-solid fa-dog"></i></span>
-				<span class ="filterstext">Pats allowed</span>
-			</button>
+			</form>
 		</div>
+		<br>
+		<!--Filters Holds filter header and buttons-->	
+		<div class = "filters">
+			<h4>Filters</h4> 
+			<div>
+				<button type="button">
+					<span class ="filtersicon"><i class="fa-solid fa-money-bill-wave"></i></span>
+					<span class ="filterstext">Low cost</span>
+				</button>
+				<button type="button">
+					<span class ="filtersicon"><i class="fa-solid fa-child-reaching"></i></span>
+					<span class ="filterstext">Famlly-friendly</span>
+				</button>
+				<button type="button">
+					<span class ="filtersicon"><i class="fa-solid fa-heart"></i></span>
+					<span class ="filterstext">Romantic</span>
+				</button>
+				<button type="button">
+					<span class ="filtersicon"><i class="fa-solid fa-dog"></i></span>
+					<span class ="filterstext">Pats allowed</span>
+				</button>
+			</div>
 		
+		</div>
+	
+	<!--Info-->	
+		<div class ="info">
+			<div class ="infoicon"><i class="fa-solid fa-info"></i></div>
+			<div class ="infotext">More then 500 accommodations are avallable in the city</div>	
+		</div>
 	</div>
-	
-	<div class ="info">
-		<div class ="infoicon"><i class="fa-solid fa-info"></i></div>
-		<div class ="infotext">More then 500 accommodations are avallable in the city</div>	
-	</div>
-	
-	<br>
-	
-	<div class = "cards">
+		<br>
+	<!--Accomadation and Popular Wrap-->
+		<div class = "cards">
+		<!--Accomadation might be more hell to come-->
 		<div class = "accommodations">
 			<h3 class = "accomadationhead">Accomadation in Marseille</h3>
 			<br>
@@ -114,7 +127,7 @@
 			
 			<p><a href="#">Show more</a></p>
 		</div>
-		
+		<!--Popular FML-->
 		<div class = "popular">
 			<div class = "popularhead">
 				<h3>Most Popular</h3>
@@ -122,7 +135,9 @@
 			</div>
 			<div class = "popularwrap">
 				<div class = "popularcard">
+					
 					<img src="Images/Popular/MorningSun.jpg" alt="Paris">
+					
 					<div>
 					<p class = "waightbold">Morning Sun Hotel</p>
 					<p>Night Starting at 128€</p>
@@ -148,8 +163,8 @@
 			</div>	
 		</div>
 	</div>
-	<h3>Activities in Marseille</h3>
-	<div class = "ativitieswrap">
+		<h3>Activities in Marseille</h3>
+		<div class = "ativitieswrap">
 	<!-- 
 		<div class = "ativitiescards">
 			<img src="Images/Activities/OldPort.jpg" class = "ativitiesimgL">
@@ -213,7 +228,8 @@
 		</div>
 		
 	</div>
-</div>
+	</div>
+	</main>
 	<footer class = "footer">
 		<div>
 			<h3>About</h3>

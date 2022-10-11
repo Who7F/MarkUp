@@ -1,0 +1,211 @@
+body {
+
+	font-size: 24px;
+}
+
+.header{
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.logo{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header > div >img{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 150px;
+	height: auto;	
+}
+/*Navbar*/
+.header > nav{
+	
+}
+
+.navbar{
+	width: 100%;
+}
+
+.header > div> nav a{
+	border-bottom: 3px solid white;
+	border-top: none; 
+}
+
+.header > div> nav a:hover{
+	border-top: none; 
+	border-bottom: 3px solid blue;
+}
+
+.main{
+	width: 100%;
+	margin: auto;
+}
+
+.options{
+	padding-top: 30px;
+	width: 90%;
+	margin: auto;
+}
+
+.head3{
+	padding-bottom: 20px;
+}
+
+.form{
+	padding-top: 20px;
+}
+.locationdot{
+	font-size: 24px;
+}
+/*Input box*/
+.searchbox{
+	font-size: 24px;
+	width: 70%;	
+}
+
+/*Button*/
+.searchbutton{
+	
+}
+
+.searchicon{
+	visibility: visible;
+	font-size: 24px;
+}
+
+.searchtext{
+	visibility: hidden;
+	font-size: 0px;
+}
+
+.filters{
+
+	flex-direction: column;
+
+}
+
+.filters > div{
+	width: 100%
+}
+
+
+.filters > div{
+	
+}
+/*button parent class*/
+.filters> div> button{
+	
+	
+}
+/*button span icon*/
+.filtersicon{
+	font-size: 24px;
+}
+/*button span icon*/
+.filterstext{
+	font-size: 24px;
+}
+
+.info{
+	
+	width:600px;
+	
+}
+
+.cards{
+	
+}
+/*Header - Holds Logo and navbar*/
+
+.popular {
+	border-radius: 0px;
+}
+
+.popularhead{
+
+}
+
+.popularwrap{
+	
+	justify-content: space-around;
+	
+}
+
+
+.popularcard{
+	width: 90%;
+	background-color: white;
+	justify-content: space-around;
+}
+
+.popularcard > img{
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	width: 100%; 
+	height: 400px;
+}
+
+.popularcard:hover {
+
+}
+
+.popularcard > div > p{
+
+}
+
+.accommodations {
+	
+}
+
+.accommodationswrap{
+	
+}
+
+.accomadationcard{
+	width: 90%;
+	height: 600px;
+}
+
+.accomadationcard > img{
+	
+	width: 100%; 
+	height: 400px;
+}
+
+.accomadationcard > p{
+
+}
+
+.ativitieswrap{
+	height: fit-content;
+	padding-bottom: 50px;
+}
+
+.ativitieswrap{
+	gap: 10px;
+}
+
+.ativitiescards{
+	width: 90%; 
+}
+
+.ativitiescards > p{
+
+}
+
+.ativitiesimgL{
+	width: 100%; 
+	height: 400px;
+}
+
+.ativitiesimgM{
+	width: 100%; 
+	height: 400px;
+}
+
+.footer{
+	flex-direction: column;
+}
