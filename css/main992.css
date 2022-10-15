@@ -7,9 +7,7 @@ body{
 }
 
 /*bodywrap - So fooder  margin*/
-.bodywrap{	
 
-}
 
 /*Header - Holds Logo and navbar*/
 .header{
@@ -266,6 +264,9 @@ body{
 	
 }
 
+.Activitieshead{
+	padding-left: 5px;
+}
 /*cards Activities*/
 .ativitieswrap{
 	display: flex;

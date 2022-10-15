@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 	<title>Booki</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/b1c481eca1.js" crossorigin="anonymous"></script>
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	
-<!--<link rel="stylesheet" type="text/css" media="screen and (min-width: 1600px)" href="css/main.css">-->
+	<script src="https://kit.fontawesome.com/b1c481eca1.js" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" type="text/css" href="css/main992.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="css/main992cap.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/tablet.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 991px)" href="css/tablet.css">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px)" href="css/mobile.css">
 </head>
 
 <body>
 
-<div class = "bodywrap">
+
 	<!--Hedder.  Holds Logo and Nav bar -->
 	<header class = "header">
 		<div class = "logo">
@@ -32,8 +32,8 @@
 	</header>
 
 	<main class = main>
-	<!--First div.  Welcome and Search-->
-	<div class = "options">
+	<!--option.  Welcome and Search-->
+		<div class = "options">
 		<div>
 			<h3 class = "head3">Find a place for your dream vacation</h3>
 			<p>Downtown or in nature</p>
@@ -48,6 +48,7 @@
 		<!--Filters Holds filter header and buttons-->	
 		<div class = "filters">
 			<h4>Filters</h4> 
+			<!--4 Buttons-->
 			<div>
 				<button type="button">
 					<span class ="filtersicon"><i class="fa-solid fa-money-bill-wave"></i></span>
@@ -79,10 +80,11 @@
 	<!--Accomadation and Popular Wrap-->
 		<div class = "cards">
 		<!--Accomadation might be more hell to come-->
-		<div class = "accommodations">
+			<div class = "accommodations">
 			<h3 class = "accomadationhead">Accomadation in Marseille</h3>
 			<br>
 			<div class = "accommodationswrap">
+				<!--Cards-->
 				<div class = "accomadationcard">
 					<img src="Images/Accommodation/LaCannebi.jpg" alt="Paris">
 					<p class = "waightbold">Auberge La Canneblère</p>
@@ -128,12 +130,14 @@
 			<p><a href="#">Show more</a></p>
 		</div>
 		<!--Popular FML-->
-		<div class = "popular">
+			<div class = "popular">
+		
 			<div class = "popularhead">
 				<h3>Most Popular</h3>
 				<i class="fa-solid fa-star"></i>
 			</div>
 			<div class = "popularwrap">
+				<!--Cards-->
 				<div class = "popularcard">
 					
 					<img src="Images/Popular/MorningSun.jpg" alt="Paris">
@@ -162,74 +166,45 @@
 				</div>
 			</div>	
 		</div>
-	</div>
-		<h3>Activities in Marseille</h3>
-		<div class = "ativitieswrap">
-	<!-- 
-		<div class = "ativitiescards">
-			<img src="Images/Activities/OldPort.jpg" class = "ativitiesimgL">
-			<p>Old Port</p>
+	
 		</div>
-		<div>
+		
+		<h3 class = "Activitieshead">Activities in Marseille</h3>
+		<div class = ativitieswrap>
 			<div class = "ativitiescards">
-				<img src="Images/Activities/Pormegues.jpg" class = "ativitiesimgM">
-				<p>Pomegues Fort</p>
-			</div>
-			<br>
-			<div class = "ativitiescards">
-				<img src="Images/Activities/Friout.jpg" class = "ativitiesimgM">
-				<p>Frioul Island</p>
-			</div>
-		</div>
-		<div class = "ativitiescards">
-			<img src="Images/Activities/Calanques.jpg" alt="Paris" class = "ativitiesimgL">
-			<p>Calanques National Park</p>
-		</div>
-		<div>
-			<div class = "ativitiescards">
-				<img src="Images/Activities/NotreDeme.jpg" class = "ativitiesimgM">
-				<p>Notre-Deme-da-La-Garde</p>
-			</div>
-			<br>
-			<div class = "ativitiescards">
-				<img src="Images/Activities/Longchamp.jpg" class = "ativitiesimgM">
-				<p>Longchamp Park</p>
-			</div>
-		</div>
-	-->	
-		<div class = "ativitiescards">
 			<img src="Images/Activities/OldPort.jpg" alt="Paris" class = "ativitiesimgL">
 			<p>Old Port</p>
 		</div>
 		
-		<div class = "ativitiescards">
+			<div class = "ativitiescards">
 			<img src="Images/Activities/Pormegues.jpg" alt="Paris" class = "ativitiesimgM">
 			<p>Pomegues Fort</p>
 		</div>
 		
-		<div class = "ativitiescards">
+			<div class = "ativitiescards">
 			<img src="Images/Activities/Friout.jpg" alt="Paris" class = "ativitiesimgM">
 			<p>Frioul Island</p>
 		</div>
 		
-		<div class = "ativitiescards">
+			<div class = "ativitiescards">
 			<img src="Images/Activities/Calanques.jpg" alt="Paris" class = "ativitiesimgL">
 			<p>Calanques National Park</p>
 		</div>
 		
-		<div class = "ativitiescards">
+			<div class = "ativitiescards">
 			<img src="Images/Activities/NotreDeme.jpg" alt="Paris" class = "ativitiesimgM">
 			<p>Notre-Deme-da-La-Garde</p>
 		</div>
 			
-		<div class = "ativitiescards">
+			<div class = "ativitiescards">
 			<img src="Images/Activities/Longchamp.jpg" alt="Paris" class = "ativitiesimgM">
 			<p>Longchamp Park</p>
 		</div>
+		</div>
 		
-	</div>
-	</div>
+	
 	</main>
+	
 	<footer class = "footer">
 		<div>
 			<h3>About</h3>

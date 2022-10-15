@@ -1,12 +1,14 @@
 body {
 
 }
-.bodywrap{	
 
-}
 
 .filters > div{
 	width: 100%
+}
+
+.infotext{
+	width:100%;
 }
 
 .cards{
@@ -57,7 +59,8 @@ body {
 .accommodations {
 	width: 100%;
 	background-color: white;
-	padding: 0;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 .accommodationswrap{
@@ -85,6 +88,9 @@ body {
 
 }
 
+.ativities{
+	padding: 10xp;
+}
 .ativitieswrap{
 	flex-direction: row;
 	justify-content: space-around;
